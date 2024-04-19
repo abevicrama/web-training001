@@ -1,0 +1,20 @@
+.articalbody{
+    background-color: rgba(0, 255, 255,0.4);
+}
+.articalbody2{
+    background-color: rgba(0, 0, 0,0.2);
+    padding: 3px;
+    margin: 1%;
+}
+.articalsubtitle{
+    font-size: 25pt; 
+    color: #000000;
+    margin: 10px;
+}
+.articletext{
+    text-align: justify;
+    color: #000000;
+    font-size: 20pt;
+    margin:10px;
+    
+}

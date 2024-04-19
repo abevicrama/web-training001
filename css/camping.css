@@ -1,0 +1,174 @@
+.body-grid{
+    display: grid;
+  grid-template-areas:
+    
+    'menu main main main main main'
+    'menu right right right right right';
+  gap: 10px;
+ 
+  padding: 10px;
+}
+
+.menu-cont{
+   grid-area: menu;
+   width: auto;height: auto;
+   background-color: rgba(255, 227, 194,0.6);
+   padding: 5px;
+}
+.content-cont{
+    grid-area: main;
+    background-color: rgba(138, 43, 226,0.9)
+    
+}
+.ttr{
+    width: 98%;
+
+    background-color: rgba(74, 131, 253,0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.tabs{
+    width: 98%;
+    height: 90%;
+    display: block;
+    margin: 40px auto;
+    position: relative;
+}
+
+.tabs .tab{
+    float: left;
+    display: block;
+}
+
+.tabs .tab>input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.tabs .tab>label {
+    display: block;
+    padding: 6px 21px;
+    font-size: 12px;
+   
+    cursor: pointer;
+    position: relative;
+    color: #FFF;
+    background: #4A83FD;
+}
+
+.tabs .content {
+   /* or display: none; */
+    overflow:scroll;
+    width: 98%;
+    padding: 25px;
+    position:absolute;
+    top: 27px;
+    left: 0;
+    background: #d37a7a;
+    color: #DFDFDF;
+    
+    opacity:0;
+    transition: opacity 400ms ease-out;
+}
+
+.tabs>.tab>[id^="tab"]:checked + label {
+    top: 0;
+    background: #303030;
+    color: #F5F5F5;
+}
+
+.tabs>.tab>[id^="tab"]:checked ~ [id^="tab-content"] {
+    z-index: 1;/* or display: block; */
+   
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+}
+
+
+
+
+
+.camping-tiles{
+  
+    
+}
+
+.camping-tile{
+    
+    width: 24%;
+    background-color: rgba(223, 223, 223,0.3);
+    display: inline-block;
+  text-align: center;
+  padding: 5px;
+  
+  
+}
+
+.camping-tile:hover{
+      
+}
+.camping-tile-image{
+    width:100%;
+  
+}
+
+
+
+.camping-tile-image:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.02,1.02);
+}
+
+.camping-tile-title{
+   background-color: #09836683;
+    margin: 10px;
+    font-size: large;
+    color: white;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+}
+.camp-form{
+    
+    margin: 50px;
+    margin-left: 400px;
+    margin-right: 400px;margin-bottom: 100px;
+}
+legend {
+    font-size: 30px;
+    background-color: rgba(108, 163, 193, 0.728);
+    color: white;
+    padding: 5px 10px;
+  }
+
+
+
+.form-table-row{
+    
+}
+.form-table-td{
+    
+    margin-top: 10px;
+    font-size: 20px;
+    
+
+}
+.form-table-submit{
+    border: 2px solid #ccc;
+    width: 90px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-table-t input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}

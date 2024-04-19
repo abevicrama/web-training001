@@ -1,0 +1,10 @@
+.ican2{
+    width: 10%;
+    display: inline-block;
+    background-color: rgba(28, 154, 5, 0.42);
+}
+
+
+.ican2:hover{
+    transform: scale(1.1,1.1);
+}

@@ -1,0 +1,64 @@
+.bodycontainer{
+    width: 98%;
+    height: auto;
+    background-color: rgba(9, 209, 166, 0.308);
+    border-radius: 5px;
+    margin: 1%;
+}
+.body-grid{
+    display: grid;
+  grid-template-areas:
+    
+    'menu main main main main main'
+    'menu right right right right right';
+  gap: 10px;
+ 
+  padding: 10px;
+}
+
+.menu-cont{
+   grid-area: menu;
+   width: auto;height: auto;
+   background-color: rgba(24, 233, 111, 0.551);
+   padding: 5px;
+}
+.content-cont{
+    grid-area: main;
+    background-color: rgba(27, 238, 224, 0.56)
+    
+}
+.con{
+    grid-area: right;
+    background-color: rgba(138, 43, 226,0.1);
+    
+}
+.vision-head{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 25px;
+}
+.vision-text{
+    text-align: justify;
+    font-weight: 100;
+    padding: 2%;
+
+font-size: 20px;
+}
+
+.welcome-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+   
+}
+.welcome-note{
+    font-size: 20px;
+    padding: 10px;
+}
+.cont-list{
+    font-size: 18px;
+    padding: 2%;
+}
